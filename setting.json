@@ -1,0 +1,37 @@
+{
+    "font": "FreeSansOblique.ttf",
+    "port": 22222,
+    "host": "hspc4.ddns.net",
+    "tasks": [
+        {
+            "name": "cpu",
+            "command": "top",
+            "heartbeattime": 2
+        },
+        {
+            "name": "disk",
+            "command": "df",
+            "heartbeattime": 10
+        },
+        {
+            "name": "memory",
+            "command": "free",
+            "heartbeattime": 2
+        },
+        {
+            "name": "uptime",
+            "command": "uptime",
+            "heartbeattime": 10
+        },
+        {
+            "name": "processes",
+            "command": "ps aux",
+            "heartbeattime": 2
+        },
+        {
+            "name": "network",
+            "command": "netstat -i",
+            "heartbeattime": 2
+        }
+    ]
+}
